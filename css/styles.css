@@ -1,14 +1,3 @@
-body {
-    font-family: 'Open Sans', sans-serif;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-[hrev] {
-    color: blueviolet;
-}
 
 /* Селекторы 
  -универсальные      *    
@@ -19,3 +8,153 @@ body {
  -Ребенка            .header > a
  -Потомка            .header a
      */
+
+:root {
+    --
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.list {
+
+}
+
+/* HEADER */
+
+.link {
+    text-decoration: none;
+    background-color: rgb(87, 76, 76);
+}
+.header-item,
+.header-tel {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+.header-item:hover,
+.header-item:focus {
+    color: #FF6C00;
+}
+/* .header-tel {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+} */
+.header-btn {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+
+/* HERO */
+.hero {
+    background-color: rgb(99, 83, 83);
+}
+.hero-item {
+    font-weight: 600;
+font-size: 11px;
+line-height: 1.36;
+/* identical to box height */
+
+letter-spacing: 0.2em;
+
+color: #303030;
+
+transform: rotate(-90deg);
+
+}
+.hero-pre-title {
+    font-weight: 600;
+font-size: 11px;
+line-height: 1.36;
+/* identical to box height */
+
+letter-spacing: 0.1em;
+text-transform: uppercase;
+
+color: rgba(157, 164, 189, 0.6);
+
+}
+.hero-title {
+    font-family: 'Raleway', sans-serif;
+font-weight: 700;
+font-size: 72px;
+line-height: 1.18;
+
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+}
+.hero-after-title {
+font-weight: 400;
+font-size: 18px;
+line-height: 1.67;
+letter-spacing: 0.02em;
+
+color: #9DA4BD;
+}
+
+/* ABOUT Делать самому */
+.about {
+}
+.about-list {
+    text-decoration: none;
+}
+.list {
+}
+.about-item {
+}
+.about-pre-title {
+    font-weight: 600;
+font-size: 11px;
+line-height: 1.33;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+
+color: #303030;
+}
+.about-title {
+    font-weight: 700;
+font-size: 42px;
+line-height: 1.17;
+letter-spacing: 0.05em;
+
+color: #303030;
+}
+.about-after-title {
+    font-size: 18px;
+line-height: 1.67;
+letter-spacing: 0.02em;
+
+
+}
+.about-text {
+    font-size: 14px;
+line-height: 1.86;
+letter-spacing: 0.02em;
+
+color: #555555;
+}
+.about-btn {
+    font-weight: 600;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0.09em;
+text-transform: uppercase;
+
+color: #303030;
+}
