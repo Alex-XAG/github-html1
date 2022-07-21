@@ -1,7 +1,21 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    color: tomato;
 }
 
-/* Селекторы */
-/* -универсальные */
+* {
+    box-sizing: border-box;
+}
+
+[hrev] {
+    color: blueviolet;
+}
+
+/* Селекторы 
+ -универсальные      *    
+ -тег                p
+ - ID                #id
+ -class              .class
+ -Селектор атрибута  [hrev]
+ -Ребенка            .header > a
+ -Потомка            .header a
+     */
