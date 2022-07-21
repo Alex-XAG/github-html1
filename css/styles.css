@@ -10,7 +10,9 @@
      */
 
 :root {
-    --
+    --header-text-color: #FFFFFF;
+    --title-color-main: #FFFFFF;
+    --title-color-second: #303030;
 }
 
 
@@ -19,10 +21,40 @@ body {
 }
 
 .list {
-
+    list-style: none;
+}
+.pre-title {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.title {
+    font-family: 'Raleway',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+}
+.after-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+}
+.btn {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
 }
 
 /* HEADER */
+
+
 
 .link {
     text-decoration: none;
@@ -34,10 +66,10 @@ body {
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.1em;
-    color: #FFFFFF;
+    color: var(--header-text-color);
 }
-.header-item:hover,
-.header-item:focus {
+.header-item:hover, .header-tel:hover,
+.header-item:focus, .header-tel:focus {
     color: #FF6C00;
 }
 /* .header-tel {
@@ -45,116 +77,210 @@ body {
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.1em;
-    text-transform: uppercase;
-
     color: #FFFFFF;
 } */
 .header-btn {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-
-    color: #FFFFFF;
+    color: var(--header-text-color);
 }
-
 
 /* HERO */
 .hero {
     background-color: rgb(99, 83, 83);
 }
-.hero-item {
+
+.hero-link {
     font-weight: 600;
-font-size: 11px;
-line-height: 1.36;
-/* identical to box height */
-
-letter-spacing: 0.2em;
-
-color: #303030;
-
-transform: rotate(-90deg);
-
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: #303030;
+    transform: rotate(-90deg);
 }
-.hero-pre-title {
-    font-weight: 600;
-font-size: 11px;
-line-height: 1.36;
-/* identical to box height */
-
-letter-spacing: 0.1em;
-text-transform: uppercase;
-
-color: rgba(157, 164, 189, 0.6);
-
+.hero-link:hover,
+.hero-link:focus {
+    color: #FF6C00;
+}
+.hero-pre-title {    
+    color: rgba(157, 164, 189, 0.6);
 }
 .hero-title {
     font-family: 'Raleway', sans-serif;
-font-weight: 700;
-font-size: 72px;
-line-height: 1.18;
-
-letter-spacing: 0.05em;
-
-color: #FFFFFF;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+    color: var(--title-color-main);
 }
 .hero-after-title {
-font-weight: 400;
-font-size: 18px;
-line-height: 1.67;
-letter-spacing: 0.02em;
-
-color: #9DA4BD;
+    color: #9DA4BD;
 }
 
 /* ABOUT Делать самому */
-.about {
-}
-.about-list {
-    text-decoration: none;
-}
-.list {
-}
-.about-item {
-}
-.about-pre-title {
-    font-weight: 600;
-font-size: 11px;
-line-height: 1.33;
-letter-spacing: 0.1em;
-text-transform: uppercase;
 
-color: #303030;
+
+.about-pre-title {
+    color: var(--title-color-second);
 }
 .about-title {
-    font-weight: 700;
-font-size: 42px;
-line-height: 1.17;
-letter-spacing: 0.05em;
-
-color: #303030;
+    color: var(--title-color-second);
 }
 .about-after-title {
-    font-size: 18px;
-line-height: 1.67;
-letter-spacing: 0.02em;
-
-
+    color: #555555;
 }
 .about-text {
     font-size: 14px;
-line-height: 1.86;
-letter-spacing: 0.02em;
-
-color: #555555;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: #555555;
 }
-.about-btn {
-    font-weight: 600;
-font-size: 12px;
-line-height: 16px;
-letter-spacing: 0.09em;
-text-transform: uppercase;
+.about-btn {  
+    color: #303030;
+}
+/* PRICES Делать самому */
 
-color: #303030;
+.prices-pre-title {
+    color: rgba(157, 164, 189, 0.6);
+}
+.prices-title {
+    color: var(--title-color-main);
+
+    background-color: rgb(82, 76, 76);
+}
+.prices-list-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #9DA4BD;
+}
+.prices-btn {
+    color: var(--header-text-color);
+}
+
+/* ADVANTAGES Делать самому */
+
+.advantages-item span {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #303030;
+}
+.advantages-item sup {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.38;
+    text-align: center;
+    color: #FF6C00;
+}
+.advantages-list-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-align: center;
+
+    color: #303030;
+}
+.advantages-pre-title {
+    color: var(--title-color-second);
+}
+.advantages-title {
+    color: var(--title-color-second)
+}
+.advantages-after-title {
+    color:  #555555;;
+}
+
+/* BARBERS Делать самому */
+
+.barbers-pre-title {
+    color: var(--title-color-second);
+}
+.barbers-title {
+    color: var(--title-color-second);
+}
+.barbers-item-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--title-color-second);
+}
+.barbers-list-text {
+    font-size: 14px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FF6C00;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+} 
+
+/* GALLERY Делать самому */
+
+.galery-pre-title {
+    color: var(--title-color-second);
+}
+
+/* BOOKING Делать самому */
+
+.booking-title {
+    color: var(--title-color-main);
+    background-color: rgb(59, 55, 55);
+}
+
+/* CONTACTS Делать самому */
+
+.contacts-title {
+    color: var(--title-color-main);
+    background-color: #555555;
+}
+.contacts-address-street {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #9DA4BD;
+}
+.contacts-tel,
+.contacts-mail {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #9DA4BD;
+}
+.contacts-mail {
+    text-decoration-line: underline;
+}
+.contacts-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.37;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: var(--header-text-color);
+}
+.contacts-worktime {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: #9DA4BD;
 }
