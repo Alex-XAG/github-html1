@@ -15,13 +15,39 @@
     --title-color-second: #303030;
 }
 
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+button {
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
+}
 
 body {
     font-family: 'Open Sans', sans-serif;
 }
+img {
+    display: block;
+}
 
 .list {
     list-style: none;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+    outline: 2px solid tomato;
 }
 .pre-title {
     font-weight: 600;
@@ -51,9 +77,16 @@ body {
     letter-spacing: 0.09em;
     text-transform: uppercase;
 }
+.section {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
 
 /* HEADER */
-
+.header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 
 
 .link {
@@ -87,7 +120,9 @@ body {
 .hero {
     background-color: rgb(99, 83, 83);
 }
-
+.hero-content {
+    padding: 272px 100px 206px 100px;
+}
 .hero-link {
     font-weight: 600;
     font-size: 11px;
@@ -101,9 +136,13 @@ body {
     color: #FF6C00;
 }
 .hero-pre-title {    
-    color: rgba(157, 164, 189, 0.6);
+    margin-bottom: 20px;
+
+    color: rgba(157, 164, 189, 0.6); 
 }
 .hero-title {
+    margin-bottom: 20px;
+
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 72px;
@@ -112,6 +151,7 @@ body {
     color: var(--title-color-main);
 }
 .hero-after-title {
+    max-width: 360px;
     color: #9DA4BD;
 }
 
@@ -119,12 +159,18 @@ body {
 
 
 .about-pre-title {
+    margin-bottom: 20px;
+
     color: var(--title-color-second);
 }
 .about-title {
+    margin-bottom: 20px;
+
     color: var(--title-color-second);
 }
 .about-after-title {
+    margin-bottom: 40px;
+
     color: #555555;
 }
 .about-text {
@@ -138,13 +184,25 @@ body {
 }
 /* PRICES Делать самому */
 
+
 .prices-pre-title {
+    margin-bottom: 20px;
+
     color: rgba(157, 164, 189, 0.6);
 }
 .prices-title {
+    margin-bottom: 44px;
+
     color: var(--title-color-main);
 
     background-color: rgb(82, 76, 76);
+}
+.prices-list {
+    border: 1px solid #FFFFFF;
+    padding: 30px 40px;
+}
+.prices-item {
+    margin-bottom: 20px;
 }
 .prices-list-text {
     font-weight: 400;
@@ -155,9 +213,18 @@ body {
 }
 .prices-btn {
     color: var(--header-text-color);
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 
 /* ADVANTAGES Делать самому */
+.advantages {
+    padding-top: 121px;
+}
+.advantages-item {
+
+}
 
 .advantages-item span {
     font-weight: 700;
@@ -184,9 +251,12 @@ body {
     color: #303030;
 }
 .advantages-pre-title {
+    margin-bottom: 20px;
+
     color: var(--title-color-second);
 }
 .advantages-title {
+    margin-bottom: 20px;
     color: var(--title-color-second)
 }
 .advantages-after-title {
