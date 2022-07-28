@@ -138,9 +138,7 @@ img {
 }
 
 /* HERO */
-.hero {
-    
-}
+
 .hero .container {
     display: flex;
 }
@@ -275,9 +273,6 @@ img {
 .advantages {
     padding-top: 121px;
 }
-.advantages-item {
-
-}
 
 .advantages-item span {
     font-weight: 700;
@@ -318,6 +313,11 @@ img {
 
 /* BARBERS Делать самому */
 
+.barbers {
+    background-color: rgba(247, 247, 247, 1)
+;
+}
+
 .barbers-list {
     display: flex;
     gap: 30px;
@@ -327,9 +327,11 @@ img {
 }
 
 .barbers-pre-title {
+    margin-bottom: 20px;
     color: var(--title-color-second);
 }
 .barbers-title {
+    margin-bottom: 44px;
     color: var(--title-color-second);
 }
 .barbers-item-title {
