@@ -87,7 +87,21 @@ img {
     padding-top: 32px;
     padding-bottom: 32px;
 }
+.header-list {
+    display: flex;
+    column-gap: 30px;
+}
 
+.header .container {
+    display: flex;
+    align-items: center;
+}
+.header-logo {
+    margin-right: 130px;
+}
+.header-contact {
+    margin-left: auto;
+}
 
 .link {
     text-decoration: none;
@@ -114,14 +128,29 @@ img {
 } */
 .header-btn {
     color: var(--header-text-color);
+    margin-left: 30px;
+    min-width: 160px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: transparent;
+    border-color: rgba(255, 108, 0, 1)
+;
 }
 
 /* HERO */
 .hero {
-    background-color: rgb(99, 83, 83);
+    
+}
+.hero .container {
+    display: flex;
 }
 .hero-content {
+    background-color: rgb(99, 83, 83);
     padding: 272px 100px 206px 100px;
+    flex-grow: 1;
+}
+.hero-list {
+    width: 100px;
 }
 .hero-link {
     font-weight: 600;
@@ -157,6 +186,19 @@ img {
 
 /* ABOUT Делать самому */
 
+.about-list {
+    display: flex;
+    column-gap: 30px;
+}
+.about .container {
+    display: flex;
+    column-gap: 30px;
+
+}
+.about-content {
+    max-width: 470px;
+}
+
 
 .about-pre-title {
     margin-bottom: 20px;
@@ -184,6 +226,11 @@ img {
 }
 /* PRICES Делать самому */
 
+.prices-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .prices-pre-title {
     margin-bottom: 20px;
@@ -200,8 +247,14 @@ img {
 .prices-list {
     border: 1px solid #FFFFFF;
     padding: 30px 40px;
+    width: calc(50% - 15px);
 }
 .prices-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.prices-item:not(:last-child) {
     margin-bottom: 20px;
 }
 .prices-list-text {
@@ -265,6 +318,14 @@ img {
 
 /* BARBERS Делать самому */
 
+.barbers-list {
+    display: flex;
+    gap: 30px;
+}
+.barbers-item {
+    width: calc((100% - 60px) / 3);
+}
+
 .barbers-pre-title {
     color: var(--title-color-second);
 }
@@ -301,9 +362,18 @@ img {
 } 
 
 /* GALLERY Делать самому */
+.gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.gallery-item {
+    width: calc((100% - 90p) / 4);
+}
 
 .galery-pre-title {
     color: var(--title-color-second);
+    margin-bottom: 44px;
 }
 
 /* BOOKING Делать самому */
