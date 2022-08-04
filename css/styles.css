@@ -49,12 +49,21 @@ img {
 
     outline: 2px solid tomato;
 }
-.pre-title {
+.pre-title {    
+    display: flex;
+    align-items: center;
+    gap: 20px;
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+}
+.pre-title::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
 }
 .title {
     font-family: 'Raleway',sans-serif;
@@ -254,20 +263,34 @@ img {
 
     color: var(--title-color-main);
 
-    background-color: rgb(82, 76, 76);
 }
-.prices-list {
-    border: 1px solid #FFFFFF;
+.prices-list {    
     padding: 30px 40px;
     width: calc(50% - 15px);
+}
+.prices-list:first-child {
+    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+.prices-list:last-child {
+    background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 .prices-item {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    align-items: baseline;
 }
 .prices-item:not(:last-child) {
     margin-bottom: 20px;
+}
+.prices-item::after {
+    content: '';
+    background-color:rgba(157, 164, 189, 0.12);
+    width: 100px;
+    height: 1px;
+    flex-grow: 1;
+    margin-left: 12px;
+    margin-right: 12px;
 }
 .prices-list-text {
     font-weight: 400;
@@ -275,6 +298,9 @@ img {
     line-height: 1.67;
     letter-spacing: 0.02em;
     color: #9DA4BD;
+}
+.prices-list-text:last-child {
+    order: 1;
 }
 .prices-btn {
     color: var(--header-text-color);
@@ -287,7 +313,9 @@ img {
 .advantages {
     padding-top: 121px;
 }
+.advantages-item {
 
+}
 .advantages-item span {
     font-weight: 700;
     font-size: 42px;
