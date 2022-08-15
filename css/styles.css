@@ -47,7 +47,7 @@ img {
     padding-right: 15px;
     margin: 0 auto;
 
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
 }
 .pre-title {    
     display: flex;
@@ -93,17 +93,26 @@ img {
 
 /* HEADER */
 .header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
     padding-top: 32px;
     padding-bottom: 32px;
+
 }
 .header-list {
     display: flex;
     column-gap: 30px;
 }
 
-.header .container {
+.header .container {   
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 .header-logo {
     margin-right: 130px;
@@ -114,7 +123,7 @@ img {
 
 .link {
     text-decoration: none;
-    background-color: rgb(87, 76, 76);
+    /* background-color: rgb(87, 76, 76); */
 }
 .header-item,
 .header-tel {
@@ -149,9 +158,11 @@ img {
 /* HERO */
 
 .hero .container {
+    position: relative;
     display: flex;
 }
 .hero-content {
+    
     background-color: #303030;
     background-image: linear-gradient(
     rgba(25, 28, 38, 0.2),
